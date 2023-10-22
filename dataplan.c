@@ -35,8 +35,12 @@ int main()
     {
         printf("Total GB used must be non-negative. Please enter a valid value.\n");
         return 1;
-    }
-
-
+    } 
+   
+   
     int days_used = curr_day - 1;
     int days_remaining = 30 - days_used;
+    float average_daily_use = Gb_used / days_used;
+
+    printf("%d days used, %d days remaining\n", days_used, days_remaining);
+    printf("Average daily use: %.3f GB/day\n", average_daily_use);
