@@ -29,3 +29,14 @@ int main()
 
     printf("Enter the current day in the 30 day period (1-30): ");
     scanf("%f", &curr_day);
+
+   
+    if (Gb_used < 0)
+    {
+        printf("Total GB used must be non-negative. Please enter a valid value.\n");
+        return 1;
+    }
+
+
+    int days_used = curr_day - 1;
+    int days_remaining = 30 - days_used;
